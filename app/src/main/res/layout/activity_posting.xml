@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hirehub.LoginActivity"
+    android:background="@drawable/body_background">
+
+    <!--______Header_____-->
+    <TextView
+        android:id="@+id/textViewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/hirehublogo"
+        android:textAlignment="center" />
+    <TextView
+        android:id="@+id/textViewApropos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/textViewHeader"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="#CB807A"
+        android:padding="20dp"
+        android:text="Post an ad "
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <!--______Titre_____-->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewApropos"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:text="Title:(*)"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <!-- Champ d'écriture pour le titre -->
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewApropos"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edittext_border"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+    <!--______Category______-->
+    <TextView
+        android:id="@+id/categoryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="16dp"
+        android:text="Category:(*)"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_below="@id/titleText"/>
+    <!-- Champ de sélection de la catégorie -->
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/categoryText"
+        android:layout_marginStart="135dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="-25dp"
+        android:padding="12dp"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:background="@drawable/edittext_border"/>
+    <!--____Secteur____-->
+    <TextView
+        android:id="@+id/SectorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sector :"
+        android:layout_below="@id/categoryText"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="16dp"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+    <!-- Champ de sélection du secteur -->
+    <Spinner
+        android:id="@+id/sectorSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SectorText"
+        android:layout_marginStart="135dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="-25dp"
+        android:textColor="@color/black"
+        android:background="@drawable/edittext_border"
+        android:padding="14dp" />
+
+    <!--______Contrat______-->
+    <TextView
+        android:id="@+id/contratText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SectorText"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:text="Contrat type:"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/contractTypeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contratText"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="-25dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edittext_border"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <!--_____Description______-->
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description (*):"
+        android:layout_below="@id/contratText"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+    <!-- Champ d'écriture pour la description -->
+    <EditText
+        android:id="@+id/descriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionText"
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/black"
+        android:background="@drawable/edittext_border"
+        android:padding="50dp" />
+
+    <!--____Ville____-->
+    <TextView
+        android:id="@+id/cityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City :"
+        android:layout_below="@id/descriptionText"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="20dp"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+    <!-- Champ de sélection du Ville -->
+    <Spinner
+        android:id="@+id/citySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityText"
+        android:layout_marginStart="135dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="-30dp"
+        android:background="@drawable/edittext_border"
+        android:padding="17dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/postButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#C67770"
+        android:layout_below="@id/citySpinner"
+        android:background="@drawable/button_background"
+        android:text="Next"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"/>
+
+    <!--_____Footer____-->
+    <LinearLayout
+        android:id="@+id/footerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#1D3959"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:padding="15dp">
+        <!--______SignupLink_______-->
+        <TextView
+            android:id="@+id/textViewSignUpLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-50dp"
+            android:layout_marginTop="0dp"
+            android:text="  Fields marked with (*) are mandatory"
+            android:textColor="#CC817A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true" />
+    </LinearLayout>
+</RelativeLayout>

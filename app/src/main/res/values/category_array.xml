@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category_array">
+        <item>front end development </item>
+        <item>back end development </item>
+        <item>digital marketing </item>
+        <item>UI/UX design </item>
+        <item>business intelligence </item>
+        <item>mobile development  </item>
+        <item>Test Category</item>
+
+    </string-array>
+</resources>

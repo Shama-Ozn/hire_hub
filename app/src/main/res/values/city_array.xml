@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="city_array">
+        <item>Casa </item>
+        <item>Settat </item>
+        <item>Marrakesh</item>
+        <item>Agadir</item>
+        <item>Tanger</item>
+        <item>Ouarzazate</item>
+        <item>Settat</item>
+
+    </string-array>
+</resources>
